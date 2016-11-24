@@ -102,7 +102,7 @@ body {
   }
 
   .logo:hover .logo-roundel {
-    background-color: #FFFFFF;
+    background-color: #912438;
     -webkit-box-shadow:  0px 1px 0px 1px rgba(255, 255, 255, 1);
         box-shadow:  0px 1px 0px 1px rgba(255, 255, 255, 1);
     -webkit-transition: all 500ms ease;
@@ -151,6 +151,8 @@ body {
   color:black;
   font-size: 25px;
   border-bottom: 1px solid #000000;
+  font-family: 'gandhi_sansbold', cursive;
+  font-weight:bold;
 }
 
 header {
@@ -162,3 +164,14 @@ hr {
   clear:both;
   border-color:black;
 }
+
+h1 {
+  font-family: 'gandhi_sansbold', cursive;
+  font-weight:bold;
+  font-size:48px;
+}
+
+h2 {
+  font-family: 'gandhi_sansbold_italic', cursive;
+}
+
