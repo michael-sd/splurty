@@ -4,3 +4,161 @@
 .clear {
   clear:both;
 }
+
+@font-face {
+  font-family: 'loveloblack';
+  src:    url('http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.eot');
+  src:    url('http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.eot?#iefix') format('embedded-opentype'),
+      url('http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.woff') format('woff'),
+      url('http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.ttf') format('truetype'),
+      url('http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.svg#loveloblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+  font-family: 'loveloblack';
+  src: url('http://www.netnibbl.es/wp-content/themes/netnibbles/fonts/lovelo_black-webfont.svg#loveloblack') format('svg');
+  }
+}
+
+body {
+  text-align: center;
+  background: #ece6dc;
+  padding: 25px;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1;
+  text-decoration: none;
+}
+
+  .logo * {
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo-roundel {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+    border: 10px solid #000000;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .left-n {
+    color: #000000;
+    font-size: 40px;
+    font-family: "loveloblack";
+    text-shadow: -1px 1px 0px rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 27px;
+    top: 36px;
+  }
+
+  .right-n {
+    color: #000000;
+    font-size: 40px;
+    font-family: "loveloblack";
+    text-shadow: -1px 1px 0px rgba(255, 255, 255, 1);
+    position: absolute;
+    right: 27px;
+    top: 36px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+  }
+
+  .logo-site-name {
+    font-family: "loveloblack";
+    color: #333333; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 6px;
+    position: relative;
+    top: 65px;
+    left: 0.5px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .logo:hover .logo-roundel {
+    background-color: #FFFFFF;
+    -webkit-box-shadow:  0px 1px 0px 1px rgba(255, 255, 255, 1);
+        box-shadow:  0px 1px 0px 1px rgba(255, 255, 255, 1);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+  .logo:hover .left-n {
+    position: absolute;
+    left: inherit;
+    right: 27px;
+    top: 36px;
+  }
+
+  .logo:hover .right-n {
+    position: absolute;
+    right: inherit;
+    left: 27px;
+    top: 36px;
+  }
+
+  .logo:hover .logo-site-name {
+    position: relative;
+    top: 67px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+
+.slogan {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  font-size: 25px;
+  padding-top: 26px;
+}
+
+.links {
+  padding-top: 26px;
+}
+
+.links a {
+  color:black;
+  font-size: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+header {
+  padding-top: 15px;
+  border-top: 9px solid #000000;
+}
+
+hr {
+  clear:both;
+  border-color:black;
+}
