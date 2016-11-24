@@ -28,7 +28,20 @@
   <hr />
   <br class="clear" />
 
-<%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="col-xs-6">
+      <%= link_to "More Motivation", "#", class: 'next-quote' %>
+    </div>
+    <div class="col-xs-6 footer-blurb">
+      Created and developed by <a href="http://michaelsd.getforge.io">Michael</a><br />
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
