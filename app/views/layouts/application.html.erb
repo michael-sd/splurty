@@ -9,19 +9,19 @@
 <body>
   <header>
     <div class="col-xs-3">
-            <a href="http://splurty-michael-sd.herokuapp.com/" class="logo">
+      <%= link_to root_path, class: 'logo' do %>
         <div class="logo-roundel">
           <span class="logo-site-name"></span>
           <span class="left-n">m</span>
           <span class="right-n">Q</span>
         </div>
-      </a>
+      <% end %>
     </div>
     <div class="col-xs-4 slogan">
       major.Quote - Positivity and Progression
     </div>
     <div class="col-xs-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
   </header>
@@ -35,7 +35,7 @@
 <div class="footer">
   <div class="container">
     <div class="col-xs-6">
-      <%= link_to "More Motivation", "#", class: 'next-quote' %>
+      <%= link_to "More Motivation", root_path, class: 'next-quote' %>
     </div>
     <div class="col-xs-6 footer-blurb">
       Created and developed by <a href="http://michaelsd.getforge.io">Michael</a><br />
