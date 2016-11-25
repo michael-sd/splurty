@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Splurty</title>
+  <title>major Quote</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -17,11 +17,12 @@
         </div>
       <% end %>
     </div>
-    <div class="col-xs-4 slogan">
-      major.Quote - Positivity and Progression
+    <div class="col-xs-4 hidden-xs slogan">
+      major.Quote - Keep Achieving
     </div>
-    <div class="col-xs-5 links">
+    <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
       <%= link_to 'Contribute', "#", data: {toggle: 'modal', target: '#myModal'} %>
+      &nbsp;&nbsp;
       <%= link_to 'About', about_path %>
     </div>
   </header>
@@ -38,8 +39,9 @@
         </div>
       <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
-            <%= f.input :saying %>
-            <%= f.input :author %>
+            <%= f.input :saying, label: "What saying do you want to share?", placeholder: "The best way to predict the future is to create it." %>
+            <br />
+            <%= f.input :author, label: "Who is the author of this quote?", placeholder: "Peter Drucker" %>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -62,12 +64,14 @@
   <%= yield %>
 </div>
 
+<br class="clear" />
+
 <div class="footer">
   <div class="container">
-    <div class="col-xs-6">
+    <div class="col-xs-12 col-sm-6">
       <%= link_to "More Motivation", root_path, class: 'next-quote' %>
     </div>
-    <div class="col-xs-6 footer-blurb">
+    <div class="col-xs-12 col-sm-6 footer-blurb">
       Created and developed by <a href="http://michaelsd.getforge.io">Michael</a><br />
     </div>
   </div>
